@@ -46,8 +46,7 @@
   loading="lazy"
   allowfullscreen
   referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCCqXoJKWjMyMCSnrMhsV8u63f-WZC-TmU
-    &q=homeless+resources+food+pantries+housing+assistance,united+states">
+  src="https://www.google.com/maps/embed/v1/search?key=<%=ENV.fetch("GOOGLE_API_KEY")%>&q=homeless+resources+food+pantries+housing+assistance,united+states">
   </iframe>
 </div>
 <div class="footer">
