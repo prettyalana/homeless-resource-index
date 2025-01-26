@@ -6,6 +6,9 @@ configure do
 end
 
 configure :development do
+  # Only load .env in development and test
+  require 'dotenv/load'
+
   # we would also like a nicer error page in development
   require "better_errors"
   require "binding_of_caller"
