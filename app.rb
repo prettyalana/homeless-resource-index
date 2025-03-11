@@ -67,7 +67,7 @@ get("/:search/:search_results") do
 
   @results = @parsed_data.fetch("results").map { |result| result.slice("name", "opening_hours", "photos", "rating") }
 
-  @search_terms = ["homeless", "homeless resources", "homeless resource", "homeless shelters open now", "homeless shelter open now", "shelter", "homeless shelters open near me", "homeless shelter open near me", "homeless shelter", "homeless shelters", "food pantries", "food pantry", "food resources", "food distribution", "food distribution center", "food bank", "human services", "housing assistance", "homeless shelters open 24 hours"]
+  @search_terms = ["homeless", "homeless resources", "homeless resource", "homeless shelters open now", "homeless shelter open now", "shelter", "shelters", "homeless shelters open near me", "homeless shelter open near me", "homeless shelter", "homeless shelters", "food pantries", "food pantry", "food resources", "food distribution", "food distribution center", "food bank", "human services", "housing assistance", "homeless shelters open 24 hours"]
   quotes = ["You are never too old to set another goal or to dream a new dream. — Malala Yousafzai", "Be the reason someone smiles. Be the reason someone feels loved and believes in the goodness in people.
 - Roy T. Bennett", "Be a positive energy trampoline – absorb what you need and rebound more back. — Dave Carolan", "Believe in yourself. You are braver than you think, more talented than you know, and capable of more than you imagine.
 Roy T. Bennett"]
