@@ -31,22 +31,26 @@
           </tr>
         </thead>
         <tbody>
-
-          <%@results.each do |result|%>
+          <% @results.each do |result| %>
             <tr>
-              <td><%=result.fetch("name")%></td>
-              <td id="td-rating"><% if result.fetch("rating") == 0%>
-                  <%="We couldn't find any reviews"%>
-                <%else%>
-                  <%=result.fetch("rating")%>
-                <%end%>
+              <td><%= result.fetch("name", "No name available") %></td>
+              <td id="td-rating">
+                <% rating = result.fetch("rating", nil) %>
+                <% if rating.nil? %>
+                  We couldn't find any reviews
+                <% elsif rating == 0 %>
+                  We couldn't find any reviews
+                <% else %>
+                  <%= rating %>
+                <% end %>
               </td>
-            <% end %>
-          </tbody>
-        </table>
+            </tr>
+          <% end %>
+        </tbody>
       </table>
     </table>
-  </div>
+  </table>
+</div>
 </div>
 <%else%>
   <div class="home"><a href="/"><i class="fa-solid fa-xmark"></i></a>
