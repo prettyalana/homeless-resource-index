@@ -8,7 +8,7 @@ gem "sinatra-contrib"
 gem "geocoder"
 gem "google_places"
 gem "http"
-gem 'rack', '~> 3.1', '>= 3.1.7'
+gem 'rack', '~> 3.1', '>= 3.1.16'
 gem 'rackup'
 
 # Use Puma as the app server
