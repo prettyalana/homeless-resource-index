@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-<a href="https://homelessresourceindex.co">Homeless Resource Index</a>
+<a href="https://homelessresourceindex.onrender.com">Homeless Resource Index</a>
   </br>
 </h1>
 
